@@ -45,7 +45,7 @@ class Header extends React.Component {
 
     return (
       <div id="header" className="header">
-        {menuMode === 'inline' ? (
+        {/* {menuMode === 'inline' ? (
           <Popover
             overlayClassName="popover-menu"
             placement="bottomRight"
@@ -61,7 +61,7 @@ class Header extends React.Component {
               onClick={this.handleShowMenu}
             />
           </Popover>
-        ) : null}
+        ) : null} */}
         <Row>
           <Col xxl={4} xl={5} lg={8} md={8} sm={24} xs={24}>
             <div id="logo" to="/">

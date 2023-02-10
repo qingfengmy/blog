@@ -14,7 +14,7 @@ function Banner(props) {
           <div className="home-banner-image">
             <img
               alt="banner"
-              src="https://gw.alipayobjects.com/zos/rmsportal/rqKQOpnMxeJKngVvulsF.svg"
+              src={require('../../../public/avator.jpg')}
               width="100%"
             />
           </div>
