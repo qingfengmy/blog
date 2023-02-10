@@ -1,0 +1,554 @@
+.byted-weektime {
+  margin-bottom: 10px;
+  background: white;
+  display: inline-flex;
+  width: 606px;
+}
+
+.byted-weektime .byted-schedule th,
+.byted-weektime .byted-schedule td {
+  font-size: 12px !important;
+}
+
+.byted-weektime .byted-popover {
+  width: 128px;
+}
+
+.byted-weektime .btn-xs {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+
+.byted-weektime .calendar {
+  -webkit-user-select: none;
+  position: relative;
+  display: inline-block;
+}
+
+.byted-weektime .calendar .schedule {
+  background: #2f88ff;
+  width: 0;
+  height: 0;
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -ms-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.byted-weektime .calendar .calendar-table {
+  border-collapse: collapse;
+  border-radius: 4px;
+}
+
+.byted-weektime .calendar .calendar-table tr .calendar-atom-time:hover {
+  background: #f5f5f5;
+}
+
+.byted-weektime .calendar .calendar-table tr .ui-selected {
+  background: #2f88ff;
+}
+
+.byted-weektime .calendar .calendar-table tr .ui-selected:hover {
+  background: #2f88ff;
+}
+
+.byted-weektime .calendar .calendar-table tr,
+.byted-weektime .calendar .calendar-table td,
+.byted-weektime .calendar .calendar-table th {
+  border: 1px solid #e4e9ed;
+  font-size: 12px;
+  text-align: center;
+  min-width: 11px;
+  line-height: 1.8em;
+  -webkit-transition: background 200ms ease;
+  -moz-transition: background 200ms ease;
+  -ms-transition: background 200ms ease;
+  transition: background 200ms ease;
+}
+
+.byted-weektime .calendar .calendar-table tbody tr {
+  height: 30px;
+}
+
+.byted-weektime .calendar .calendar-table tbody tr td:first-child {
+  background: #f8f9fa;
+}
+
+.byted-weektime .calendar .calendar-table thead th,
+.byted-weektime .calendar .calendar-table thead td {
+  background: #f8f9fa;
+}
+
+.byted-weektime .calendar .calendar-table .tip-text {
+  color: #999;
+  margin-right: 8px;
+}
+
+.byted-weektime .calendar .calendar-table .td-selected-time {
+  text-align: left;
+  line-height: 2.4em;
+}
+
+.byted-weektime .calendar .calendar-table .td-selected-time p {
+  max-width: 571px;
+  word-break: break-all;
+  margin: 8px 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.byted-weektime .calendar .calendar-table .td-selected-time p:last-child {
+  margin-bottom: 12px;
+}
+
+.byted-weektime .calendar .calendar-table .td-selected-time p:first-child {
+  margin-top: 4px;
+}
+
+.byted-weektime .calendar .calendar-table .td-table-tip {
+  line-height: 2.4em;
+  padding: 0 12px 0 19px;
+  background: #fff !important;
+}
+
+.byted-weektime .calendar .calendar-table .td-table-tip .clearfix {
+  height: 46px;
+  line-height: 46px;
+}
+
+.byted-weektime .calendar .calendar-table .td-table-tip .pull-left {
+  font-size: 14px;
+  color: #333333;
+}
+
+.byted-weektime .week-td {
+  width: 75px;
+  padding: 20px 0;
+}
+
+.byted-weektime a {
+  cursor: pointer;
+  color: #2f88ff;
+  font-size: 14px;
+}
+
+.byted-weektime .readable-weektime {
+  font-size: 12px;
+  line-height: 2em;
+  max-width: 640px;
+}
+
+.byted-weektime .readable-weektime .btn {
+  float: right;
+}
+
+.byted-weektime .readable-weektime ul {
+  padding-left: 0;
+  padding-right: 90px;
+}
+
+.byted-weektime .readable-weektime ul li {
+  list-style: none;
+}
+
+.byted-weektime .readable-weektime ul li span {
+  color: #666;
+}
+
+.byted-weektime .readable-weektime ul li .select-time {
+  -webkit-user-select: none;
+  user-select: none;
+  margin: 0 2px;
+  cursor: pointer;
+}
+
+.byted-weektime .readable-weektime ul li .select-time .del {
+  opacity: 0;
+}
+
+.byted-weektime .readable-weektime ul li .select-time:hover {
+  color: #333;
+}
+
+.byted-weektime .readable-weektime ul li .select-time:hover .del {
+  opacity: 1;
+}
+
+#readableWeekTime {
+  font-size: 12px;
+  line-height: 2em;
+}
+
+#readableWeekTime ul {
+  padding-left: 20px;
+}
+
+#readableWeekTime ul li span {
+  margin: 0 3px;
+  color: #666;
+}
+
+#readableWeekTime ul li time {
+  font-size: 14px;
+  padding: 0 5px;
+}
+
+#readableWeekTime ul li i.del {
+  width: 15px;
+  height: 15px;
+  background-color: #d9534f;
+  display: none;
+  z-index: 10;
+  color: #fff;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: center;
+  cursor: pointer;
+  font-family: '宋体';
+  font-style: normal;
+  border-radius: 20px;
+}
+
+#readableWeekTime ul li:hover i.del {
+  display: inline-block;
+}
+
+#readableWeekTime ul li i.del:hover {
+  background-color: #d2322d;
+}
+
+#readableWeekTime .btn {
+  float: right;
+}
+
+/* 111111111 */
+
+.byted-schedule {
+}
+
+.byted-schedule-link {
+  display: block;
+  margin-right: 24px;
+  color: #333;
+}
+
+.byted-schedule .bui-schedule-tooltip {
+  display: inline;
+}
+
+.byted-schedule .bui-schedule-tooltip .bui-popover-panel {
+  padding: 8px 16px;
+}
+
+.byted-schedule table {
+  border-left: none;
+  border-style: hidden;
+}
+
+.byted-schedule .tableWrap {
+  margin: 0 auto;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: #ebebeb;
+}
+
+.byted-schedule td,
+.byted-schedule th {
+  padding: 0;
+}
+
+.byted-schedule-header {
+  border: 1px solid;
+  border-color: #ebebeb;
+  border-bottom: none;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 38px;
+  padding: 0 12px;
+  font-size: 12px;
+  background-color: transparent;
+}
+
+.byted-schedule-header,
+.byted-schedule-option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.byted-schedule-option .byted-schedule-option-selected {
+  color: #338aff;
+}
+
+.byted-schedule-explain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.byted-schedule-header-selectable,
+.byted-schedule-header-selected {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #333;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 11px;
+}
+
+.byted-schedule-header-selectable:before,
+.byted-schedule-header-selected:before {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 4px;
+  background-color: #338aff;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+
+.byted-schedule-header-selectable {
+  margin-right: 0;
+}
+
+.byted-schedule-header-selectable:before {
+  border: 1px solid #dadfe3;
+  background-color: transparent;
+}
+
+.byted-schedule-no-selected-time {
+  margin: 0;
+}
+
+.byted-schedule-rang {
+  background: #338aff;
+  width: 0;
+  height: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  -webkit-transition: all 1ms ease;
+  transition: all 1ms ease;
+}
+
+.byted-schedule-week-td {
+  width: 75px;
+  padding: 20px 0;
+}
+
+.byted-schedule-calendar {
+  -webkit-user-select: none;
+  position: relative;
+  display: inline-block;
+}
+
+.byted-schedule-calendar-time {
+  font-weight: 400;
+}
+
+.byted-schedule-calendar-time-all {
+  height: 39px;
+}
+
+.byted-schedule-calendar-time-item {
+  height: 31px;
+}
+
+.byted-schedule-calendar-atom-time:hover {
+  background: #f0f0f0;
+}
+
+.byted-schedule-calendar .byted-schedule-calendar-disabled {
+  background: #fafafa;
+  cursor: not-allowed;
+}
+
+.byted-schedule-calendar .byted-schedule-calendar-selected,
+.byted-schedule-calendar .byted-schedule-calendar-selected:hover {
+  background: rgba(121,117,255);
+}
+
+.byted-schedule-calendar .byted-schedule-calendar-hovered,
+.byted-schedule-calendar .byted-schedule-calendar-hovered:hover {
+  background: rgba(121,117,255,0.5);
+}
+
+.byted-schedule-calendar-table {
+  border-collapse: separate;
+  border-radius: 4px;
+}
+
+.byted-schedule-calendar-table tr td,
+.byted-schedule-calendar-table tr th {
+  border-left: none;
+  border-top: none;
+  border-bottom: 1px solid;
+  border-bottom-color: #ebebeb;
+  border-right: 1px solid;
+  border-right-color: #ebebeb;
+  font-size: 14px;
+  text-align: center;
+  min-width: 11px;
+  line-height: 1.8em;
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+  color: #333;
+  background: transparent;
+}
+
+.byted-schedule-calendar-table tr td:last-child,
+.byted-schedule-calendar-table tr th:last-child {
+  border-right: none;
+}
+
+.byted-schedule-calendar-table tbody tr {
+  height: 30px;
+}
+
+.byted-schedule-calendar-table tbody tr:last-child td {
+  // border-bottom: none;
+}
+
+.byted-schedule-calendar-table .byted-schedule-table-tip {
+  line-height: 2.4em;
+  padding: 0 12px 0 19px;
+}
+
+.byted-schedule-calendar-table .byted-schedule-table-tip .clearfix {
+  height: 22px;
+  line-height: 22px;
+  margin: 8px 0;
+}
+
+.byted-schedule-calendar-table
+  .byted-schedule-table-tip
+  .clearfix
+  .byted-schedule-no-selected-time {
+  color: #666;
+}
+
+.byted-schedule-calendar-table .byted-schedule-table-tip .pull-left {
+  font-size: 14px;
+  color: #333;
+}
+
+.byted-schedule-tip-text {
+  color: #333;
+  margin-right: 8px;
+}
+
+.byted-schedule-selected-time {
+  text-align: left;
+  line-height: 2.4em;
+}
+
+.byted-schedule-selected-time .byted-schedule-tip-text {
+  min-width: 60px;
+}
+
+.byted-schedule-selected-time div:last-child {
+  margin-bottom: 6px;
+}
+
+.byted-schedule-selected-time p {
+  word-break: break-all;
+  margin: 0 0 8px;
+  font-size: 14px;
+  line-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #666;
+}
+
+.byted-schedule a {
+  cursor: pointer;
+  color: #338aff;
+  font-size: 14px;
+}
+
+.byted-schedule-senior .tableWrap {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.byted-schedule-senior .byted-schedule-header {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+/* 222 */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.byted-link {
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 14px;
+  line-height: 22px;
+  outline: none;
+  text-decoration: none;
+  z-index: 2;
+  color: #338aff;
+  background-color: transparent;
+  border-color: transparent;
+}
+.pull-right {
+  float: right !important;
+}
+
+.pull-left {
+  float: left !important;
+}
+// 选中框的样式
+// .selectable-selectbox {
+//   z-index: 9000;
+//   position: absolute;
+//   cursor: default;
+//   background: none;
+//   border: 1px dashed grey;
+// }
